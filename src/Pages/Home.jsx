@@ -14,11 +14,17 @@ import spinachLeaf from '../assets/img/spinach-leaf.png';
 import home1 from '../assets2/home1.png';
 import home2 from '../assets2/home2.png';
 import home3 from '../assets2/home3.png';
+import skill1 from '../assets2/skill1.png';
+import skill2 from '../assets2/skill2.png';
+import skill3 from '../assets2/skill3.png';
 import today from '../assets2/today.jpg.avif';
+import chef1 from '../assets2/chef1.png';
 import { Link } from 'react-router-dom';
 import vid from '../assets2/vidone.mp4';
 import svg1 from '../assets2/svg1.svg';
 import svg2 from '../assets2/svg2.svg';
+import svg3 from '../assets2/svg3.svg';
+import svg41 from '../assets2/svg41.svg';
 
 import wine from '../assets2/wine.mp4';
 import home11 from '../assets2/home11.png';
@@ -225,22 +231,26 @@ const Home = () => {
                 
             </section>
 
-            <section className="recently section flex justify-center w-[100vw] " id="recently" >
-                <div className="recently__container container grid " ref={leftDivRef2}>
+
+
+{/*Rajma rice*/}
+            <section className=" w-[100vw] " id="recently" >
+                <div className="  flex flex-row m-20 justify-between " >
 
                     
-                    <div ref={rightDivRef2}>
-                         <img src={today} className="recently__img rounded-3xl" alt="Recently Added Dish" />
+                    <div >
+                         <img src={today} className="recently__img rounded-3xl" alt="Recently Added Dish " />
                     </div>
                    
-                    <div className="recently__data">
+                    <div className=" mx-auto ml-20 flex flex-col align-center justify-center w-[500px] space-y-6">
+                    <img src={svg41}></img>
                         <span className="section__subtitle">Today's Special</span>
                         <h2 className="section__title">Rajma Rice<br />With Gravy</h2>
-                        <p className="recently__description">
+                        <p className=" ">
                             Take a look at Today's Special. And do not deprive yourself of a good
                             meal, enjoy and be happy.
                         </p>
-                        <a href=" /menu " className="button">
+                        <a href=" /menu " className="button mx-auto">
                             Visit Menu <i className="ri-arrow-right-line"></i>
                         </a>
                         {/* <img src={spinachLeaf} className="recently__data-img" alt="Spinach Leaf" /> */}
@@ -253,6 +263,69 @@ const Home = () => {
                 <img src={leafBranch2} className="recently__leaf-1" alt="Leaf Branch 1" />
                 <img src={leafBranch3} className="recently__leaf-2" alt="Leaf Branch 2" />
             </section>
+{/*chef section*/}
+            <section className='  bg-[#F2ECE0] h-[1100px] lg:ml-16 flex flex-col '>
+            <div className='flex flex-row justify-between mt-8 p-10'>
+            <div className='mx-auto text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl 3xl:text-6xl  4xl:text-7xl  mb-2 p-12 x text-ellipsis space-y-1'> 
+                Our Experienced <br/> Chef <br/> Mr. bhupinder Singh
+                <img src={svg2} className='w-[300px] mx-auto -mt-16'></img> 
+            </div>
+            <div className='w-[600px] text-[8px] md:text-xl  text-[#505050]  space-y-3 '>
+            <img src={svg3} className='w-[200px] mx-auto h-[100px]'></img>
+                <p>Has worked in the F&B industry in UK and has 5 years of experience in the industry.</p>
+                <p> Chef Bhupinder demonstrates innovative thinking and creativity in creating unique and delicious dishes, showcasing a passion for culinary arts.</p>
+                <p className='pb-3'>With meticulous attention to detail, Chef Bhupinder ensures that every dish is executed to perfection, from ingredient selection to plating presentation.
+
+              Chef Bhupinder  motivates the team, fostering a collaborative work environment.</p>
+            </div>
+           
+                
+            </div>
+            <div className=' -mt-18'>
+            <img src={chef1}></img>
+
+            </div>
+            
+                 
+            </section>
+            {/*Skill's section*/}
+            <section
+            className=' mt-80 bg-[#f5f5f5] h-[1100px] lg:ml-16 '>
+            <p className='text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl 3xl:text-6xl  4xl:text-7xl  mb-2 p-12 x text-ellipsis'>PREMIUM OFFERING BY  DELUX DHABA</p>
+            <img src={svg2} className='  w-[300px] mx-auto h-[300px] -mt-28'></img>
+            <div className='flex flex-row mx-auto m-7  p-7 justify-evenly -mt-24 ' >
+                <div className='  w-[300px] h-[750px] flex flex-col justify-evenly space-y-3 '>
+                <h1 className=' text-black'>MAGICAL ATMOSPHERE</h1>
+                    <img src={skill1} className='w-full hover:animate-pulse ease-in'></img>
+                    <p className='text-justify'>Dont we all love the perfect blend of good vibes and food in any restaurant? Isnt that something which makes the experience memorable? If youre in for a spellbinding atmosphere and feel-good vibe, let us welcome you to the choicest Indian restaurant in Calgary.
+
+</p>
+                </div>
+           
+                <div className='  w-[300px] h-[750px] flex flex-col justify-evenly space-y-3'>
+                <h1 className=' text-black'>BEST QUALITY FOOD</h1>
+                    <img src={skill2} className='w-full  hover:animate-pulse'></img>
+                    <p className='text-justify'>If there’s one thing we don’t like to compromise with, it’s the quality of food created in our restaurant. We strictly adhere to the cleaning and sanitizing guidelines for restaurants and food joints. The restaurant does not only provide the meal of your choice but also offers a hygienic and healthy setting for our food lovers..
+
+</p>
+                </div>
+                <div className='   w-[300px] h-[750px] flex flex-col justify-evenly space-y-3 '>
+                <h1 className=' text-black'>LOW COSTING FOOD</h1>
+                    <img src={skill3} className='w-full hover:animate-pulse '></img>
+                    <p className='text-justify'>Yes, you don’t have to burn a hole in your pocket to enjoy fine dining with your loved ones. The restaurant offers a budget-friendly and economical menu for its customers and assures you to have the delectable Indian dishes without worrying about the bill. Yes, you don’t have to burn a hole in your pocket to .
+                    restaurant offers a budget-friendly.
+
+</p>
+                </div>
+            </div>
+            
+
+
+            
+    
+
+            </section>
+
 
             {/* Newsletter Section */}
             <section className="newsletter section flex " ref={newsletterRef}>
