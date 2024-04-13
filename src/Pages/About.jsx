@@ -4,8 +4,8 @@ import aboutImage from '../assets/img/img1.png';
 import aboutLeafImage from '../assets/img/leaf-branch-1.png';
 import  { useRef, useEffect } from 'react'
 import ScrollReveal from 'scrollreveal';
-import exciting from '../assets/img/Exciting4.png';
-import home3 from '../assets2/home3.jpg'
+
+import home3 from '../assets2/home3.png'
 
 const About = () => {
     const leftDivRef3 = useRef(null);

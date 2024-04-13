@@ -10,13 +10,7 @@ import leafBranch3 from '../assets/img/leaf-branch-3.png';
 import leafBranch4 from "../assets/img/leaf-branch-4.png"
 import homeSushiTitle from '../assets/img/home-sushi-title.png'
 import spinachLeaf from '../assets/img/spinach-leaf.png';
-import salad from '../assets/img/Salad.png';
-import popular3 from '../assets/img/popular3.png';
-import sarsoon from '../assets/img/sarson4.png';
-import dal from '../assets/img/Dal4.png';
-import gulab from '../assets/img/Gulab.png';
-import image1 from '../assets2/Image1.png';
-import image2 from '../assets2/Image2.png';
+
 import home1 from '../assets2/home1.png';
 import home2 from '../assets2/home2.png';
 import home3 from '../assets2/home3.png';
@@ -162,7 +156,7 @@ const Home = () => {
                 
                 </div>
                 <div className='lg:w-[700px] lg:h-[700px]  w-full '>
-                <img src={images[currentImageIndex]}  alt="" className=" h-[700px] animate-pulse "  />
+                <img src={images[currentImageIndex]}  alt="" className=" h-[700px]  "  />
 
                 </div>
                 <img src={leafBranch2} className="recently__leaf-1" alt="Leaf Branch 1" />
