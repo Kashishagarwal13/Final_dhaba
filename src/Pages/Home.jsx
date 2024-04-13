@@ -157,6 +157,8 @@ const Home = () => {
                 <span className='text-white text-3xl lg:text-[2.5rem] lg:leading-[1.2] 2xl:text-[2rem] 2xl:leading-[1.1] 3xl:text-[3.2rem] 3xl:leading-[1.1] 4xl:text-7xl trojan-font mb-4  uppercase text-left hover:text-4xl '>Savor authentic Indian cuisine in Deluxe Dhaba's cozy ambiance.
 </span>
 <p className='sub-title text-slate-200 mt-2 xl:mt-3 text-lg xl:text-xl 3xl:text-2xl 2xl:mt-5 hidden lg:block text-left opacity-1'  >Indulge in our sumptuous tandoori specialties, crafted with the finest ingredients and cooked to perfection in our traditional clay oven.</p>
+<a className="px-7 py-[11px] border-2 border-white  tracking-wide shadow-lg
+ bg-white  text-black   hover:bg-white font-semibold rounded-full text-[13px] md:text-lg transition duration-300  " href="/about">Know More</a>
 <video src={vid} autoPlay muted loop className='vid' ></video>
 
                 
