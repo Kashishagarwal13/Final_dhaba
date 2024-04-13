@@ -190,7 +190,7 @@ const Home = () => {
                
             </section>
 
-            <section className=' mt-80 bg-[#f5f5f5] h-[800px] lg:ml-16'>
+            <section className=' mt-80 bg-[#f5f5f5] h-[900px] lg:ml-16'>
 
                 <div className='h-[300px]  '>
                 <p className='text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl 3xl:text-6xl  4xl:text-7xl  mb-2 p-12 x text-ellipsis'> OUR <br/> 
@@ -207,7 +207,11 @@ const Home = () => {
                         </p>
                         <p className='text-[8px] md:text-xl  text-[#505050]   text-left   '>India is the land of many exclusive and exotic spices. Every single corner of India boasts food which is unique to that place. At The Grand Palace, we pride ourselves in bringing that distinct Indian cuisine to Sydney, Mona Vale and Terrigal for relishing by food connoisseurs.</p>
                         <p className='text-[8px] md:text-xl  text-[#505050]   text-left   '>We are supremely confident that our sublime food set in an ostentatious environment supported by attentive service will satiate your desire to have a unique dining experience.</p>
-                        <p className='text-[8px] md:text-xl  text-[#505050]   text-left   '>At the Delux Dhaba you can dine like royalty, but you can also feel like it too. </p>
+                        <p className='text-[8px] md:text-xl  text-[#505050]   text-left mb-7   '>At the Delux Dhaba you can dine like royalty, but you can also feel like it too. </p>
+<div className=' mt-10'>
+<a className="px-7 py-[11px] border-2 border-black  tracking-wide shadow-lg bg-[#000]  text-[#fff]  hover:bg-transparent hover:text-[#000]  font-semibold rounded-full text-[13px] md:text-lg transition duration-300  " href="/menu">Explore Our Menu</a>
+</div>
+                        
                     </div>
 
                     <div className='flex flex-row gap-x-5 w-[800px] '>
@@ -221,7 +225,7 @@ const Home = () => {
                 
             </section>
 
-            <section className="recently section flex justify-center mt-40" id="recently" >
+            <section className="recently section flex justify-center w-[100vw] " id="recently" >
                 <div className="recently__container container grid " ref={leftDivRef2}>
 
                     
@@ -236,7 +240,7 @@ const Home = () => {
                             Take a look at Today's Special. And do not deprive yourself of a good
                             meal, enjoy and be happy.
                         </p>
-                        <a href="./menu.html" className="button">
+                        <a href=" /menu " className="button">
                             Visit Menu <i className="ri-arrow-right-line"></i>
                         </a>
                         {/* <img src={spinachLeaf} className="recently__data-img" alt="Spinach Leaf" /> */}
@@ -250,13 +254,6 @@ const Home = () => {
                 <img src={leafBranch3} className="recently__leaf-2" alt="Leaf Branch 2" />
             </section>
 
-
-            
-
-  
-
-
-
             {/* Newsletter Section */}
             <section className="newsletter section flex " ref={newsletterRef}>
                
@@ -264,116 +261,6 @@ const Home = () => {
             
             </section>
 
-
-
-
-
-
-            {/* Tandoori Chicken*/}
-            {/* <section className="recently section flex justify-center mt-5" id="recently" >
-                <div className="recently__container container grid " ref={leftDivRef2}>
-                <img src={popular3} className="recently__img" alt="Recently Added Dish" />
-                    <div className="recently__data">
-                        <span className="section__subtitle">Recently Added</span>
-                        <h2 className="section__title">Tandoori Chicken<br />Extra Smoky</h2>
-                        <p className="recently__description">
-                            Take a look at What's new. And do not deprive yourself of a good
-                            meal, enjoy and be happy.
-                        </p>
-                        <a href="./menu.html" className="button">
-                            Order Now <i className="ri-arrow-right-line"></i>
-                        </a>
-                        <img src={spinachLeaf} className="recently__data-img" alt="Spinach Leaf" />
-                    </div>
-                   
-
-                   
-                </div>
-                <img src={leafBranch2} className="recently__leaf-1" alt="Leaf Branch 1" />
-                <img src={leafBranch3} className="recently__leaf-2" alt="Leaf Branch 2" />
-            </section>
-            {/* Sarsoon Ka saag */}
-{/* 
-            <section className="recently section flex justify-center" id="recently" >
-                <div className="recently__container container grid " >
-                <div ref={rightDivRef31}>
-                         <img src={sarsoon} className="recently__img rounded-full " alt="Recently Added Dish" />
-                    </div>
-                    <div className="recently__data" ref={leftDivRef31}>
-                        <span className="section__subtitle">Recently Added</span>
-                        <h2 className="section__title">Sarsoon-Ka-Saag<br />Leafy-Delight</h2>
-                        <p className="recently__description">
-                        Served with makki di roti, a culinary connection, a feast for every Indian's reflection.
-                        Simmered to perfection, a taste of Punjab's green affection.
-                        </p>
-                        <a href="./menu.html" className="button">
-                            Order Now <i className="ri-arrow-right-line"></i>
-                        </a>
-                        <img src={spinachLeaf} className="recently__data-img " alt="Spinach Leaf" />
-                    </div>
-                   
-
-                   
-                </div>
-                <img src={leafBranch2} className="recently__leaf-1" alt="Leaf Branch 1" />
-                <img src={leafBranch3} className="recently__leaf-2" alt="Leaf Branch 2" />
-            </section>  */}
-            {/*Dal Makhani*/}
-            {/* <section className="recently section flex justify-center" id="recently" >
-                <div className="recently__container container grid " ref={leftDivRef4} >
-                    <div className="recently__data">
-                        <span className="section__subtitle">Recently Added</span>
-                        <h2 className="section__title">Dal Makhani<br />Creamy Delight</h2>
-                        <p className="recently__description">
-                        Dal Makhani, a velvety blend of black lentils and kidney beans,
-                         Simmered with aromatic spices, a taste of Indian cuisine dreams.
-                        </p>
-                        <a href="./menu.html" className="button">
-                            Order Now <i className="ri-arrow-right-line"></i>
-                        </a>
-                        <img src={spinachLeaf} className="recently__data-img" alt="Spinach Leaf" />
-                    </div>
-                    <div >
-                         <img src={dal} className="recently__img rounded-full object-contain " alt="Recently Added Dish  " ref={rightDivRef4} />
-                    </div>
-
-                   
-                </div>
-                <img src={leafBranch2} className="recently__leaf-1" alt="Leaf Branch 1" />
-                <img src={leafBranch3} className="recently__leaf-2" alt="Leaf Branch 2" />
-            </section> */}
-            
-            {/*newletter section*/}
-            {/* <section className="newsletter  flex " ref={newsletterRef}>
-                <div className="newsletter__container container">
-                    <div className="newsletter__content flex flex-row justify-between ">
-                    <div className='pl-16 flex flex-col gap-y-8'>
-                    <h2 className=' text-orange-800 text-[30px]'>Exclusive Offer</h2>
-                          <p>Enjoy a Complimentary Dessert of Gulab Jamun with Every Main Course Purchase Throughout April. Treat Yourself to Something Sweet!</p>
-                    <img src={gulab} className="newsletter__img rounded-full" alt="Salad Image" />
-                    </div>
-                   
-                        
-                        <div className="newsletter__data pr-16">
-                        
-                            <span className="section__subtitle">Welcome to Delux Dhaba's Monthly Newsletter!</span>
-                            <h2 className="section__title">Featured Dishes:</h2>
-                            <p> a. Indulge in Our Signature  Chicken, Cooked to Perfection with Rich, Creamy Gravy. <br/>
-                            b. Spice Up Your Meal with Our Flavorful Paneer Tikka Masala, a Vegetarian Delight Bursting with Aromatic Spices. <br/>
-                            c. Dive into the Authentic Taste of Punjab with Our Mouthwatering Sarso Ka Saag and Makki Di Roti.</p>
-                            <form action="" className="newsletter__form mt-4">
-                                <input type="email" placeholder="Enter email" className="newsletter__input" />
-                                <button className="button newsletter__button">
-                                    Suscribe <i className="ri-send-plane-line"></i>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <img src={spinachLeaf} className="newsletter__spinach" alt="Spinach Leaf" />
-                </div>
-            </section> */}
-         
-            
 
         </div>
         
