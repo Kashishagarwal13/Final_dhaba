@@ -1,5 +1,5 @@
 import React, { useRef, useEffect , useState } from 'react'
-import { ReactTyped } from "react-typed";
+
 
 import ScrollReveal from 'scrollreveal';
 import hour from '../assets2/Hour.png';
@@ -7,8 +7,7 @@ import hour from '../assets2/Hour.png';
 import img40 from '../assets/img/img40.png'
 import leafBranch2 from "../assets/img/leaf-branch-2.png"
 import leafBranch3 from '../assets/img/leaf-branch-3.png';
-import leafBranch4 from "../assets/img/leaf-branch-4.png"
-import homeSushiTitle from '../assets/img/home-sushi-title.png'
+
 import spinachLeaf from '../assets/img/spinach-leaf.png';
 
 import home1 from '../assets2/home1.png';
@@ -60,13 +59,18 @@ const Home = () => {
     const rightDivRef31 = useRef(null);  
     const leftDivRef4 = useRef(null);
     const rightDivRef4 = useRef(null); 
+    const mleftDivRef4 = useRef(null);
+    const mrightDivRef4 = useRef(null); 
+    
+    
+
    
     const newsletterRef = useRef(null);
 
     useEffect(() => {
         if (leftDivRef.current && rightDivRef.current) {
             ScrollReveal().reveal(leftDivRef.current, {
-                origin: 'bottom', // Start the animation from the bottom
+                origin: 'top', // Start the animation from the bottom
                 duration: 1000,
                 delay: 250,
                 distance: '50px', // Distance to move
@@ -74,7 +78,7 @@ const Home = () => {
             });
     
             ScrollReveal().reveal(rightDivRef.current, {
-                origin: 'top', // Start the animation from the top
+                origin: 'bottom', // Start the animation from the top
                 duration: 1000,
                 delay: 250,
                 distance: '150px', // Distance to move
@@ -100,7 +104,7 @@ const Home = () => {
         }
         if (leftDivRef31.current && rightDivRef31.current) {
             ScrollReveal().reveal(leftDivRef31.current, {
-                origin: 'bottom', // Start the animation from the bottom
+                origin: 'right', // Start the animation from the bottom
                 duration: 1000,
                 delay: 250,
                 distance: '50px', // Distance to move
@@ -108,7 +112,7 @@ const Home = () => {
             });
     
             ScrollReveal().reveal(rightDivRef31.current, {
-                origin: 'top', // Start the animation from the top
+                origin: 'left', // Start the animation from the top
                 duration: 1000,
                 delay: 250,
                 distance: '150px', // Distance to move
@@ -135,14 +139,32 @@ const Home = () => {
 
         if (newsletterRef.current) {
             ScrollReveal().reveal(newsletterRef.current, {
-                origin: 'top',
+                origin: 'bottom',
                 duration: 2000,
-                delay: 200,
-                distance: '100px',
+                delay: 250,
+                distance: '200px',
                 scale: 1,
                 easing: 'ease',
             });
         }
+        if (mleftDivRef4.current && mrightDivRef4.current) {
+            ScrollReveal().reveal(mleftDivRef4.current, {
+                origin: 'top', // Start the animation from the bottom
+                duration: 1000,
+                delay: 250,
+                distance: '50px', // Distance to move
+                easing: 'ease',
+            });
+    
+            ScrollReveal().reveal(mrightDivRef4.current, {
+                origin: 'bottom', // Start the animation from the top
+                duration: 1000,
+                delay: 250,
+                distance: '150px', // Distance to move
+                easing: 'ease',
+            });
+        }
+    
     }, []);
 
     return (
@@ -150,9 +172,9 @@ const Home = () => {
         <div className=' mainhome overflow-x-hidden relative w-full  '>
         
         {/*first div overall*/}
-            <section className=' relative  w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center  mx-auto mt-[110px] bg-black   '>
+            <section className=' relative  w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center  mx-auto mt-[110px] bg-black    ' >
             {/*First div*/}
-            <div class='   lg:w-[60%] flex flex-col  space-y-4  lg:text-left   pl-5  lg:h-fit pt-20 lg:pl-20  lg:pr-20  text-left  '>
+            <div class='   lg:w-[60%] flex flex-col  space-y-4  lg:text-left   pl-5  lg:h-fit pt-20 lg:pl-20  lg:pr-20  text-left  ' ref={leftDivRef}>
 
 <p class='para text-[#EEA33E] font-semibold    lg:text-left flex-1 text-10px'>WELCOME TO DELUX DHABA</p>
 <span class='text-white text-lg lg:text-3xl lg:text-[2.5rem] lg:leading-[1.2]     uppercase lg:text-left inline-block'>Savor authentic Indian cuisine in Deluxe Dhaba's cozy ambiance.</span>
@@ -164,7 +186,7 @@ const Home = () => {
 
 </div>
 {/*Second Div*/}
-                <div className='  max-w-[800px]  w-full  '>
+                <div className='  max-w-[800px]  w-full  ' ref={rightDivRef}>
                 <img src={images[currentImageIndex]}  alt="" className="  "  />
 
                 </div>
@@ -173,9 +195,9 @@ const Home = () => {
             </section>
 
             {/* Second Section */}
-            <section className=' relative max-w-[1080px]  mx-auto flex flex-col lg:flex-row   mt-[100px] p-[30px]  bg-[#F2ECE0]   lg:justify-evenly '>
-
-            <div className=' max-w-[500px] w-full  min-h-[520px]' >
+            <section className=' relative max-w-[1080px]  mx-auto flex flex-col lg:flex-row   mt-[100px] p-[30px]  bg-[#F2ECE0]   lg:justify-evenly ' >
+ 
+            <div className=' max-w-[500px] w-full  min-h-[520px] ' ref={leftDivRef31}>
                 <div className='flex flex-col justify-evenly space-y-24'>
                     <img src={hour} className=''></img>
                     <img src={svg1} className='  '></img>
@@ -183,7 +205,7 @@ const Home = () => {
                 <div></div>
             </div>
 
-            <div className='flex flex-col max-w-[500px]  min-h-[680px]    '>
+            <div className='flex flex-col max-w-[500px]  min-h-[680px]    ' ref={rightDivRef31}>
             <p className='text-[#ED9D3A] text-bold text-[48px]  '>ABOUT HAPPY HOUR</p>
             <p className='text-[#1E1E1E] text-[1.5rem]   '>OFFERING BY ~ THE GREAT DELUX DHABA</p>
             <span className=' text-[14px] md:text-xl  text-[#505050]   text-left  p-10 '>Deluxe Dhaba beckons you to relish the joy of Happy Hours from 8 to 9 PM, where flavors meet festivity and every moment is a delight. Join us to indulge in our special deals and double the happiness during this magical hour! . Experience the warmth of camaraderie and the allure of discounted delights during our lively happy hour.</span>
@@ -204,7 +226,7 @@ const Home = () => {
 
             <section className=' relative mx-auto max-w-[1080px] bg-[#f5f5f5]   p-[50px] mt-[100px] ' >
 
-                <div className=' w-full mx-auto max-w-[500px] '>
+                <div className=' w-full mx-auto max-w-[500px] ' >
                 <p className='text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl   mb-2 p-12  text-ellipsis'> OUR <br/> 
                 DELICIOUS MENU</p>
                 <img src={svg2} className='w-full mx-auto -mt-16'></img>
@@ -213,7 +235,7 @@ const Home = () => {
                 </div>
 
                 <div className='flex flex-col lg:flex-row lg:justify-between   text-justify w-full max-w-[620px] justify-evenly mt-10 space-y-10 '>
-                    <div className='space-y-4 '>
+                    <div className='space-y-4 ' ref={mleftDivRef4}>
                         <p >
                             <span className='text-[#ED9D3A] font-bold'> The Delux Dhaba</span>
                         </p>
@@ -228,7 +250,7 @@ const Home = () => {
                         
                     </div>
 
-                    <div className=' flex flex-row  gap-x-5 w-full max-w-[300px]  ' >
+                    <div className=' flex flex-row  gap-x-5 w-full max-w-[300px]  ' ref={mrightDivRef4} >
                         <img src={home11} className='w-full hidden lg:block'></img>
                         <img src={home12} className='w-full hidden lg:block'></img>
                         <img src={home13} className='w-full hidden lg:block'></img>
@@ -247,14 +269,14 @@ const Home = () => {
                 <div className="  flex lg:flex-row  flex-col  justify-between w-full lg:space-x-16  " >
 
                     {/*left Section*/}
-                    <div >
-                         <img src={today} className=" rounded-3xl" />
+                    <div ref={leftDivRef2} >
+                         <img src={today} className=" rounded-3xl"  />
                     </div>
                     {/*right Section*/}
                    
-                    <div className=" w-full  flex flex-col align-center justify-center max-w-[500px] space-y-6">
+                    <div className=" w-full  flex flex-col align-center justify-center max-w-[500px] space-y-6" ref={rightDivRef2} >
                     <img src={svg41}></img>
-                        <span className="section__subtitle">Today's Special</span>
+                        <span className="section__subtitle">Today's Special</span> 
                         <h2 className="section__title">Rajma Rice<br />With Gravy</h2>
                         <p className=" ">
                             Take a look at Today's Special. And do not deprive yourself of a good
@@ -278,11 +300,11 @@ const Home = () => {
 {/*chef section*/}
             <section className=' relative mx-auto max-w-[1080px]    bg-[#F2ECE0]   flex flex-col '>
             <div className='flex flex-col lg:flex-row  justify-between  p-[30px] mt-[100px]'>
-            <div className='mx-auto w-full text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl   space-y-1 max-w-[300px]'> 
+            <div className='mx-auto w-full text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl   space-y-1 max-w-[300px]' ref={leftDivRef4}> 
                 Our Experienced <br/> Chef <br/> Mr. bhupinder Singh
                 <img src={svg2} className='w-[300px] mx-auto -mt-16'></img> 
             </div>
-            <div className='w-full max-w-[500px] text-[8px] md:text-xl  text-[#505050]  text-justify flex lg:flex-col flex-col-reverse'>
+            <div className='w-full max-w-[500px] text-[8px] md:text-xl  text-[#505050]  text-justify flex lg:flex-col flex-col-reverse' ref={rightDivRef4}>
             <img src={svg3} className='w-full mx-auto  max-h-[100px] mt-4'></img>
                 <p>Has worked in the F&B industry in UK and has 5 years of experience in the industry.</p>
                 <p> Chef Bhupinder demonstrates innovative thinking and creativity in creating unique and delicious dishes, showcasing a passion for culinary arts.</p>
@@ -293,7 +315,7 @@ const Home = () => {
            
                 
             </div>
-            <div className=' -mt-18 w-full '>
+            <div className=' -mt-18 w-full ' ref={newsletterRef}>
             <img src={chef1}></img>
 
             </div>
