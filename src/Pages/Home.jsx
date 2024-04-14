@@ -147,24 +147,23 @@ const Home = () => {
 
     return (
 
-        <div className=' mainhome '>
+        <div className=' mainhome overflow-x-hidden relative w-full  '>
         
         {/*first div overall*/}
-            <section className='flex flex-col lg:flex-row gap-y-20 lg:gap-x-2 h-[100vh] w-[100vw] mt-52 items-center justify-center lg:mt-12   '>
-                <div className=' w-full lg:w-[600px] flex flex-col lg:items-start gap-y-3 align-center justify-center lg:text-left text-center bg-black pl-8 h-[auto] lg:h-[700px] '>
+            <section className=' relative  w-10/12 max-w-[1080px] flex flex-col lg:flex-row justify-between items-center  mx-auto mt-[110px] bg-black   '>
+            {/*First div*/}
+            <div class='   lg:w-[60%] flex flex-col  space-y-4  lg:text-left   pl-5  lg:h-fit pt-20 lg:pl-20  lg:pr-20  text-left  '>
 
-                <p className=' para text-[#EEA33E] font-semibold mb-3 md:text-xl mt-10 text-left'>WELCOME TO DELUX DHABA</p>
-                <span className='text-white text-3xl lg:text-[2.5rem] lg:leading-[1.2] 2xl:text-[2rem] 2xl:leading-[1.1] 3xl:text-[3.2rem] 3xl:leading-[1.1] 4xl:text-7xl trojan-font mb-4  uppercase text-left hover:text-4xl '>Savor authentic Indian cuisine in Deluxe Dhaba's cozy ambiance.
-</span>
-<p className='sub-title text-slate-200 mt-2 xl:mt-3 text-lg xl:text-xl 3xl:text-2xl 2xl:mt-5 hidden lg:block text-left opacity-1'  >Indulge in our sumptuous tandoori specialties, crafted with the finest ingredients and cooked to perfection in our traditional clay oven.</p>
-<a className="px-7 py-[11px] border-2 border-white  tracking-wide shadow-lg
- bg-white  text-black   hover:bg-white font-semibold rounded-full text-[13px] md:text-lg transition duration-300  " href="/about">Know More</a>
-<video src={vid} autoPlay muted loop className='vid' ></video>
+<p class='para text-[#EEA33E] font-semibold    lg:text-left flex-1 text-10px'>WELCOME TO DELUX DHABA</p>
+<span class='text-white text-lg lg:text-3xl lg:text-[2.5rem] lg:leading-[1.2]     uppercase lg:text-left inline-block'>Savor authentic Indian cuisine in Deluxe Dhaba's cozy ambiance.</span>
+<p class=' text-slate-200  text-lg xl:text-xl 3xl:text-2xl 2xl:mt-5  text-left opacity-1'>Indulge in our sumptuous tandoori specialties, crafted with the finest ingredients and cooked to perfection in our traditional clay oven.</p>
+<a class="px-7 py-[11px] border-2 border-white  shadow-lg bg-white text-black hover:bg-white font-semibold rounded-full text-[13px] md:text-lg transition duration-300 w-fit" href="/about">Know More</a>
+<video src={vid} autoPlay muted loop className='vid w-full bottom-0 lg:bottom-0'></video>
 
-                
-                </div>
-                <div className='lg:w-[700px] lg:h-[700px]  w-full '>
-                <img src={images[currentImageIndex]}  alt="" className=" h-[700px]  "  />
+</div>
+{/*Second Div*/}
+                <div className='  max-w-[800px]  w-full  '>
+                <img src={images[currentImageIndex]}  alt="" className="  "  />
 
                 </div>
                 <img src={leafBranch2} className="recently__leaf-1" alt="Leaf Branch 1" />
@@ -172,25 +171,28 @@ const Home = () => {
             </section>
 
             {/* Second Section */}
-            <section className='flex flex-col lg:flex-row gap-y-20  h-[100vh] w-[100vw] mt-52   bg-[#F2ECE0] lg:mt-6 lg:ml-16 mx-auto lg:gap-x-12'>
+            <section className=' relative max-w-[1080px]  mx-auto flex flex-col lg:flex-row   mt-[100px] p-[30px]  bg-[#F2ECE0]   lg:justify-evenly '>
 
-            <div className=' m-20 w-[500px] ' >
-                <div className='flex flex-col gap-y-14'>
-                    <img src={hour} className='w-[500px]'></img>
-                    <img src={svg1} className=' h-28 '></img>
+            <div className=' max-w-[500px] w-full  min-h-[520px]' >
+                <div className='flex flex-col justify-evenly space-y-24'>
+                    <img src={hour} className=''></img>
+                    <img src={svg1} className='  '></img>
                 </div>
                 <div></div>
             </div>
 
-            <div className='flex flex-col  m-20  -ml-28 w-[500px] gap-y-8 text-lg mb-1  '>
-            <p className='text-[#ED9D3A]  '>ABOUT HAPPY HOUR</p>
-            <p className='text-[#1E1E1E] text-[1.5rem] md:text-[2.5rem] xl:text-4xl 3xl:text-[40px]  4xl:text-7xl  mb-2 md:mb-4'>OFFERING BY ~ THE GREAT DELUX DHABA</p>
-            <span className=' text-[14px] md:text-xl mb-6 text-[#505050]   text-left   p-7 '>Deluxe Dhaba beckons you to relish the joy of Happy Hours from 8 to 9 PM, where flavors meet festivity and every moment is a delight. Join us to indulge in our special deals and double the happiness during this magical hour! . Experience the warmth of camaraderie and the allure of discounted delights during our lively happy hour.</span>
-            <video src={wine} autoPlay muted loop className='vid w-[800px] h-[500px]'   ></video>
+            <div className='flex flex-col max-w-[500px]  min-h-[680px]    '>
+            <p className='text-[#ED9D3A] text-bold text-[48px]  '>ABOUT HAPPY HOUR</p>
+            <p className='text-[#1E1E1E] text-[1.5rem]   '>OFFERING BY ~ THE GREAT DELUX DHABA</p>
+            <span className=' text-[14px] md:text-xl  text-[#505050]   text-left  p-10 '>Deluxe Dhaba beckons you to relish the joy of Happy Hours from 8 to 9 PM, where flavors meet festivity and every moment is a delight. Join us to indulge in our special deals and double the happiness during this magical hour! . Experience the warmth of camaraderie and the allure of discounted delights during our lively happy hour.</span>
+            <video src={wine} autoPlay muted loop  className='vid w-full h-[400px]  '   ></video>
+
+            
 
             
 
             </div>
+        
             <img src={leafBranch2} className="recently__leaf-1" alt="Leaf Branch 1" />
                 <img src={leafBranch3} className="recently__leaf-2" alt="Leaf Branch 2" />
 
@@ -198,34 +200,35 @@ const Home = () => {
                
             </section>
 
-            <section className=' mt-80 bg-[#f5f5f5] h-[900px] lg:ml-16'>
+            <section className=' relative mx-auto max-w-[1080px] bg-[#f5f5f5]   p-[50px] mt-[100px] ' >
 
-                <div className='h-[300px]  '>
-                <p className='text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl 3xl:text-6xl  4xl:text-7xl  mb-2 p-12 x text-ellipsis'> OUR <br/> 
+                <div className=' w-full mx-auto max-w-[500px] '>
+                <p className='text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl   mb-2 p-12  text-ellipsis'> OUR <br/> 
                 DELICIOUS MENU</p>
-                <img src={svg2} className='w-[300px] mx-auto -mt-16'></img>
+                <img src={svg2} className='w-full mx-auto -mt-16'></img>
 
-                <p className='xl:text-[16px] mx-auto max-w-[30rem] mt-2'>The Delux Dhaba  is serving traditional Indian food <br></br> that is rich, plentiful and meticulously prepared.</p>
+                <p className='xl:text-[16px] mx-auto max-w-[30rem] -mt-10 '>The Delux Dhaba  is serving traditional Indian food <br></br> that is rich, plentiful and meticulously prepared.</p>
                 </div>
 
-                <div className='flex flex-row m-10 p-4  text-justify gap-x-4 w-[700px] mb-6 '>
+                <div className='flex flex-col lg:flex-row lg:justify-between   text-justify w-full max-w-[620px] justify-evenly mt-10 space-y-10 '>
                     <div className='space-y-4 '>
                         <p >
                             <span className='text-[#ED9D3A] font-bold'> The Delux Dhaba</span>
                         </p>
-                        <p className='text-[8px] md:text-xl  text-[#505050]   text-left   '>India is the land of many exclusive and exotic spices. Every single corner of India boasts food which is unique to that place. At The Grand Palace, we pride ourselves in bringing that distinct Indian cuisine to Sydney, Mona Vale and Terrigal for relishing by food connoisseurs.</p>
-                        <p className='text-[8px] md:text-xl  text-[#505050]   text-left   '>We are supremely confident that our sublime food set in an ostentatious environment supported by attentive service will satiate your desire to have a unique dining experience.</p>
-                        <p className='text-[8px] md:text-xl  text-[#505050]   text-left mb-7   '>At the Delux Dhaba you can dine like royalty, but you can also feel like it too. </p>
-<div className=' mt-10'>
+                        <p className='text-[14px] md:text-xl  text-[#505050]   text-left   '>India is the land of many exclusive and exotic spices. Every single corner of India boasts food which is unique to that place. </p>
+                        <p className='text-[14px] md:text-xl  text-[#505050]   text-left   '>We are supremely confident that our sublime food set in an ostentatious environment supported by attentive service will satiate your desire to have a unique dining experience.</p>
+                        <p className='text-[14px] md:text-xl  text-[#505050]   text-left    '>At the Delux Dhaba you can dine like royalty, but you can also feel like it too. </p>
+<div className=' mt-10 pb-6'>
 <a className="px-7 py-[11px] border-2 border-black  tracking-wide shadow-lg bg-[#000]  text-[#fff]  hover:bg-transparent hover:text-[#000]  font-semibold rounded-full text-[13px] md:text-lg transition duration-300  " href="/menu">Explore Our Menu</a>
 </div>
                         
                     </div>
 
-                    <div className='flex flex-row gap-x-5 w-[800px] '>
-                        <img src={home11} className='w-[350px] h-[400px]'></img>
-                        <img src={home12} className='w-[300px] h-[400px]'></img>
-                        <img src={home13} className='w-[300px] h-[400px]'></img>
+                    <div className=' flex flex-row  gap-x-5 w-full max-w-[300px]  ' >
+                        <img src={home11} className='w-full hidden lg:block'></img>
+                        <img src={home12} className='w-full hidden lg:block'></img>
+                        <img src={home13} className='w-full hidden lg:block'></img>
+                        <img src={home12} className='w-full lg:hidden '></img>
 
                     </div>
                     
@@ -236,15 +239,16 @@ const Home = () => {
 
 
 {/*Rajma rice*/}
-            <section className=" w-[100vw] " id="recently" >
-                <div className="  flex flex-row m-20 justify-between " >
+            <section className=" relative mx-auto max-w-[1080px]   p-[50px] mt-[100px] "  >
+                <div className="  flex lg:flex-row  flex-col  justify-between w-full lg:space-x-16  " >
 
-                    
+                    {/*left Section*/}
                     <div >
-                         <img src={today} className="recently__img rounded-3xl" alt="Recently Added Dish " />
+                         <img src={today} className=" rounded-3xl" />
                     </div>
+                    {/*right Section*/}
                    
-                    <div className=" mx-auto ml-20 flex flex-col align-center justify-center w-[500px] space-y-6">
+                    <div className=" w-full  flex flex-col align-center justify-center max-w-[500px] space-y-6">
                     <img src={svg41}></img>
                         <span className="section__subtitle">Today's Special</span>
                         <h2 className="section__title">Rajma Rice<br />With Gravy</h2>
@@ -255,7 +259,7 @@ const Home = () => {
                         <a href=" /menu " className="button mx-auto">
                             Visit Menu <i className="ri-arrow-right-line"></i>
                         </a>
-                        {/* <img src={spinachLeaf} className="recently__data-img" alt="Spinach Leaf" /> */}
+                        <img src={spinachLeaf} className="recently__data-img" alt="Spinach Leaf" /> 
                     </div>
                   
                    
@@ -266,14 +270,14 @@ const Home = () => {
                 <img src={leafBranch3} className="recently__leaf-2" alt="Leaf Branch 2" />
             </section>
 {/*chef section*/}
-            <section className='  bg-[#F2ECE0] h-[1100px] lg:ml-16 flex flex-col '>
-            <div className='flex flex-row justify-between mt-8 p-10'>
-            <div className='mx-auto text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl 3xl:text-6xl  4xl:text-7xl  mb-2 p-12 x text-ellipsis space-y-1'> 
+            <section className=' relative mx-auto max-w-[1080px]    bg-[#F2ECE0]   flex flex-col '>
+            <div className='flex flex-col lg:flex-row  justify-between  p-[30px] mt-[100px]'>
+            <div className='mx-auto w-full text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl   space-y-1 max-w-[300px]'> 
                 Our Experienced <br/> Chef <br/> Mr. bhupinder Singh
                 <img src={svg2} className='w-[300px] mx-auto -mt-16'></img> 
             </div>
-            <div className='w-[600px] text-[8px] md:text-xl  text-[#505050]  space-y-3 '>
-            <img src={svg3} className='w-[200px] mx-auto h-[100px]'></img>
+            <div className='w-full max-w-[500px] text-[8px] md:text-xl  text-[#505050]  text-justify flex lg:flex-col flex-col-reverse'>
+            <img src={svg3} className='w-full mx-auto  max-h-[100px] mt-4'></img>
                 <p>Has worked in the F&B industry in UK and has 5 years of experience in the industry.</p>
                 <p> Chef Bhupinder demonstrates innovative thinking and creativity in creating unique and delicious dishes, showcasing a passion for culinary arts.</p>
                 <p className='pb-3'>With meticulous attention to detail, Chef Bhupinder ensures that every dish is executed to perfection, from ingredient selection to plating presentation.
@@ -283,7 +287,7 @@ const Home = () => {
            
                 
             </div>
-            <div className=' -mt-18'>
+            <div className=' -mt-18 w-full '>
             <img src={chef1}></img>
 
             </div>
@@ -292,28 +296,28 @@ const Home = () => {
             </section>
             {/*Skill's section*/}
             <section
-            className=' mt-80 bg-[#f5f5f5] h-[1100px] lg:ml-16 '>
-            <p className='text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl 3xl:text-6xl  4xl:text-7xl  mb-2 p-12 x text-ellipsis'>PREMIUM OFFERING BY  DELUX DHABA</p>
+            className=' relative mx-auto max-w-[1080px]   p-[50px] mt-[100px] bg-[#f5f5f5]   '>
+            <p className='text-[#1E1E1E] text-3xl lg:text-[2.5rem] xl:text-5xl    '>PREMIUM OFFERING BY  DELUX DHABA</p>
             <img src={svg2} className='  w-[300px] mx-auto h-[300px] -mt-28'></img>
-            <div className='flex flex-row mx-auto m-7  p-7 justify-evenly -mt-24 ' >
-                <div className='  w-[300px] h-[750px] flex flex-col justify-evenly space-y-3 '>
+            <div className='flex flex-col lg:flex-row mx-auto w-full justify-evenly   lg:space-x-8 space-y-7'  >
+                <div className='  w-full  flex flex-col justify-evenly space-y-3 '>
                 <h1 className=' text-black'>MAGICAL ATMOSPHERE</h1>
-                    <img src={skill1} className='w-full hover:animate-pulse ease-in'></img>
+                    <img src={skill1} className=' hover:animate-pulse ease-in'></img>
                     <p className='text-justify'>Dont we all love the perfect blend of good vibes and food in any restaurant? Isnt that something which makes the experience memorable? If youre in for a spellbinding atmosphere and feel-good vibe, let us welcome you to the choicest Indian restaurant in Calgary.
 
 </p>
                 </div>
            
-                <div className='  w-[300px] h-[750px] flex flex-col justify-evenly space-y-3'>
+                <div className='  w-full  flex flex-col justify-evenly space-y-3'>
                 <h1 className=' text-black'>BEST QUALITY FOOD</h1>
-                    <img src={skill2} className='w-full  hover:animate-pulse'></img>
+                    <img src={skill2} className='  hover:animate-pulse'></img>
                     <p className='text-justify'>If there’s one thing we don’t like to compromise with, it’s the quality of food created in our restaurant. We strictly adhere to the cleaning and sanitizing guidelines for restaurants and food joints. The restaurant does not only provide the meal of your choice but also offers a hygienic and healthy setting for our food lovers..
 
 </p>
                 </div>
-                <div className='   w-[300px] h-[750px] flex flex-col justify-evenly space-y-3 '>
+                <div className='  w-full  flex flex-col justify-evenly space-y-3 '>
                 <h1 className=' text-black'>LOW COSTING FOOD</h1>
-                    <img src={skill3} className='w-full hover:animate-pulse '></img>
+                    <img src={skill3} className=' hover:animate-pulse '></img>
                     <p className='text-justify'>Yes, you don’t have to burn a hole in your pocket to enjoy fine dining with your loved ones. The restaurant offers a budget-friendly and economical menu for its customers and assures you to have the delectable Indian dishes without worrying about the bill. Yes, you don’t have to burn a hole in your pocket to .
                     restaurant offers a budget-friendly.
 
