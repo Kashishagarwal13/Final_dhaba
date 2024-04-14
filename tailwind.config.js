@@ -6,6 +6,13 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [function ({ addUtilities }) {
+    const newUtilities = {
+      '.video-no-controls': {
+        'controls': 'none',
+      },
+    };
+    addUtilities(newUtilities, ['responsive', 'hover']);
+  },],
 }
 
