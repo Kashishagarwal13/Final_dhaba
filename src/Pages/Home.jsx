@@ -157,7 +157,9 @@ const Home = () => {
 <p class='para text-[#EEA33E] font-semibold    lg:text-left flex-1 text-10px'>WELCOME TO DELUX DHABA</p>
 <span class='text-white text-lg lg:text-3xl lg:text-[2.5rem] lg:leading-[1.2]     uppercase lg:text-left inline-block'>Savor authentic Indian cuisine in Deluxe Dhaba's cozy ambiance.</span>
 <p class=' text-slate-200  text-lg xl:text-xl 3xl:text-2xl 2xl:mt-5  text-left opacity-1'>Indulge in our sumptuous tandoori specialties, crafted with the finest ingredients and cooked to perfection in our traditional clay oven.</p>
-<a class="px-7 py-[11px] border-2 border-white  shadow-lg bg-white text-black hover:bg-white font-semibold rounded-full text-[13px] md:text-lg transition duration-300 w-fit" href="/about">Know More</a>
+<Link to="/about">
+<a class="px-7 py-[11px] border-2 border-white  shadow-lg bg-white text-black hover:bg-white font-semibold rounded-full text-[13px] md:text-lg transition duration-300 w-fit" href="">Know More</a>
+</Link>
 <video src={vid} autoPlay muted loop  className='vid w-full bottom-0 lg:bottom-0 video-no-controls'></video>
 
 </div>
@@ -219,7 +221,9 @@ const Home = () => {
                         <p className='text-[14px] md:text-xl  text-[#505050]   text-left   '>We are supremely confident that our sublime food set in an ostentatious environment supported by attentive service will satiate your desire to have a unique dining experience.</p>
                         <p className='text-[14px] md:text-xl  text-[#505050]   text-left    '>At the Delux Dhaba you can dine like royalty, but you can also feel like it too. </p>
 <div className=' mt-10 pb-6'>
-<a className="px-7 py-[11px] border-2 border-black  tracking-wide shadow-lg bg-[#000]  text-[#fff]  hover:bg-transparent hover:text-[#000]  font-semibold rounded-full text-[13px] md:text-lg transition duration-300  " href="/menu">Explore Our Menu</a>
+<Link to="/menu">
+<a class="px-7 py-[11px] border-2 border-white  shadow-lg bg-black text-white  font-semibold rounded-full text-[13px] md:text-lg transition duration-300 w-fit" href="">Know More</a>
+</Link>
 </div>
                         
                     </div>
@@ -256,9 +260,11 @@ const Home = () => {
                             Take a look at Today's Special. And do not deprive yourself of a good
                             meal, enjoy and be happy.
                         </p>
-                        <a href=" /menu " className="button mx-auto">
+                        <Link to="/menu">
+                        <a href="  " className="button mx-auto">
                             Visit Menu <i className="ri-arrow-right-line"></i>
                         </a>
+                        </Link>
                         <img src={spinachLeaf} className="recently__data-img" alt="Spinach Leaf" /> 
                     </div>
                   
